@@ -1,0 +1,22 @@
+{
+  "name": "jstypes",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sdstoehr/jstypes.git"
+  },
+  "author": {
+    "name": "Sebastian Stöhr",
+    "email": "sebastian@sebastianstoehr.de",
+    "url": "http://www.sebastianstoehr.de/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sdstoehr/jstypes/issues"
+  },
+  "homepage": "http://www.jstypes.wtf/",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
+}
