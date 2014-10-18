@@ -8,11 +8,11 @@ var Comparison = (function (JSON, undefined) {
     };
 
     isString = function (o) {
-        return Object.prototype.toString.call(o) === "[object String]";
+        return Object.prototype.toString.call(o) === '[object String]';
     };
 
     isObject = function (o) {
-        return Object.prototype.toString.call(o) === "[object Object]";
+        return Object.prototype.toString.call(o) === '[object Object]';
     };
 
     toString = function (o) {
@@ -37,7 +37,9 @@ var Comparison = (function (JSON, undefined) {
     compare = function (val1, val2, comparator) {
 
         if (comparator === COMPARE_EQUAL) {
+            /* jshint ignore:start */
             return (val1 == val2);
+            /* jshint ignore:end */
         }
 
         return (val1 === val2);
