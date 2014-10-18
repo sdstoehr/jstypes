@@ -1,0 +1,29 @@
+.content-intro {
+  background: $color4;
+  text-align: center;
+  padding: 1.5em 0.75em;
+
+  h2 {
+    font-size: 2em;
+    margin: 0.25em;
+  }
+
+  a {
+    text-decoration: none;
+    display: inline-block;
+
+    background: $color3;
+    color: #FFF;
+
+    padding: 0.5em;
+    font-size: 1.5em;
+
+    &:hover {
+      background: $color3l;
+    }
+
+    &:focus, &:active {
+      background: $color3d;
+    }
+  }
+}

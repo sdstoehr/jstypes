@@ -1,12 +1,99 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>JavaScript Types</title>
-    <link rel="stylesheet" type="text/css" href="styles/main.min.css" />
+    <title>JStypes: Truth and equality in JavaScript</title>
+    <meta name="description" content="The JavaScript type system is quite hard to understand. Take the quiz and test your knowledge!" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="./styles/main.min.css" />
   </head>
   <body>
 
-    <script type="text/javascript" src="scripts/main.min.js"></script>
+    <header>
+        <div class="inner-container">
+            <h1 class="logo"><a href="./" title="JavaScript types">JS<em>types</em></a></h1>
+        </div>
+    </header>
+
+    <div class="content content-intro noprint">
+        <div class="inner-container">
+
+            <h2>
+                <i class="fa fa-lightbulb-o fa-2x"></i><br />
+                The JavaScript type system is quite hard to understand.
+            </h2>
+            <a href="./quiz/" title="Take the quiz!">Take the quiz and test your knowledge!</a>
+
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="inner-container">
+
+            <h2>Truth and equality in JavaScript</h2>
+
+            <p>
+                When comparing values in JavaScript you have to know about <strong class="kw">implicit coercion</strong>.
+                Otherwise you may be surprised by unexpected results.<br />
+                JavaScript automatically converts a value's data type &ndash; this is called <strong class="kw">coercion</strong>.
+                When you know the rules, you can use this concept as a powerful feature. If you don't, this is a major pitfall.
+            </p>
+
+            <p>
+                JavaScript knows two different equality operators:
+            </p>
+
+            <ul>
+                <li>the equals operator: <code>==</code></li>
+                <li>the <em>strict</em> equals operator: <code>===</code></li>
+            </ul>
+
+            <p>They differ in how they treat values of different data types.</p>
+
+            <h3 id="equals">Equals operator: <code>==</code></h3>
+
+            <p>
+                The equals operator uses the <a href="http://www.ecma-international.org/ecma-262/5.1/#sec-11.9.3" title="ECMAScript Specification: Abstract Equality Comparison Algorithm" rel="external">
+                Abstract Equality Comparison Algorithm</a> to compare two values. The algorithm specifies, how values of different types are converted before comparing them.
+                <strong>So the equals operator makes use of implicit coercion!</strong>
+            </p>
+
+
+            <h3 id="strictequals"><em>Strict</em> equals operator: <code>===</code></h3>
+
+            <p>
+                The strict equals operator uses the <a href="http://www.ecma-international.org/ecma-262/5.1/#sec-11.9.6" title="ECMAScript Specification: Strict Equality Comparison Algorithm" rel="external">
+                Strict Equality Comparison Algorithm</a>. If the types of the compared values differ, the result of the comparison is always false.
+                <strong>There is no implicit coercion taking place!</strong>
+            </p>
+
+        </div>
+    </div>
+
+    <div class="content content-hire noprint">
+        <div class="inner-container">
+            <h2>
+                <i class="fa fa-briefcase fa-2x"></i><br />
+                Interested in developing 3rd party JavaScripts?
+            </h2>
+
+            <p>
+                We are looking for JavaScript developers in Karlsruhe, Germany.<br />
+                We develop 3rd party JavaScript components, which are then integrated into several websites.
+            </p>
+
+            <a href="http://www.united-internet.de/jobs-karriere/offene-stellen/stellenangebot/job/ka-sst140702.html" title="Job description (german)" rel="external">Find out more!</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="inner-container">
+            Made with <i class="fa fa-heart"><span>love</span></i> by <a href="http://www.sebastianstoehr.de/" title="Sebastian Stöhr" rel="author external">Sebastian Stöhr</a> &ndash;
+            <a href="http://www.sebastianstoehr.de/impressum/" title="Impressum" rel="external">Impressum</a>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="./scripts/main.min.js"></script>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

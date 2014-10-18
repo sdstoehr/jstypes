@@ -1,0 +1,23 @@
+@media print {
+
+  .noprint, footer {
+    display: none;
+  }
+
+  header {
+    border-bottom: 0.1em solid #000;
+  }
+
+  .content a {
+
+    text-decoration: none;
+
+    &:after {
+      content: " (" attr(href) ") ";
+      font-size: 0.7em;
+      font-weight: normal;
+    }
+  }
+
+
+}

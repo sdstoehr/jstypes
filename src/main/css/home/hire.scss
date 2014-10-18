@@ -1,0 +1,31 @@
+.content-hire {
+  background: $color3;
+  color: #FFF;
+  text-align: center;
+  padding: 1.5em 0.75em;
+
+  h2 {
+    font-size: 2em;
+    margin: 0.25em;
+  }
+
+  a {
+    text-decoration: none;
+    display: inline-block;
+
+    background: $color1;
+    color: #FFF;
+
+    margin: 0.5em 0 0 0;
+    padding: 0.5em;
+    font-size: 1.5em;
+
+    &:hover {
+      background: $color1l;
+    }
+
+    &:focus, &:active {
+      background: $color1d;
+    }
+  }
+}

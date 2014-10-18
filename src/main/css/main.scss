@@ -1,4 +1,55 @@
 @import 'reset';
+@import 'fonts';
+
+$textcolor: #333333;
+$color1: #20617d;
+$color1l: lighten($color1, 5%);
+$color1d: darken($color1, 15%);
+
+$color2: #207396;
+$color2l: lighten($color2, 5%);
+$color2d: darken($color2, 15%);
+
+$color3: #c93e57;
+$color3l: lighten($color3, 5%);
+$color3d: darken($color3, 15%);
+
+$color4: #d2cc56;
+$color4l: lighten($color4, 5%);
+$color4d: darken($color4, 15%);
+
+$color5: #9f2238;
+$color5l: lighten($color5, 5%);
+$color5d: darken($color5, 15%);
+
+$color6: #d6d9c1;
+
+body {
+  background: $color1;
+  color: $textcolor;
+  font: 18px/1.4 'source_sans_prolight', Helvetica, Arial, sans-serif;
+}
+
+a, a:visited {
+  color: $textcolor;
+}
+
+.inner-container {
+  min-width: 320px;
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@import 'general';
+@import 'home/intro';
+@import 'home/hire';
+
+.fa span {
+  display: inline-block;
+  overflow: hidden;
+  text-indent: -1000em;
+}
 
 .clearfix:after {
   content: ".";
@@ -8,3 +59,6 @@
   line-height: 0;
   height: 0;
 }
+
+@import 'reponsive/responsive';
+@import 'print';

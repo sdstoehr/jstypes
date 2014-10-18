@@ -4,7 +4,7 @@ module.exports = {
       style: 'expanded'
     },
     files: {
-      'target/_temp/main.css': 'src/main/css/main.scss'
+      'target/_temp/css/main.css': 'src/main/css/main.scss'
     }
   }
 };

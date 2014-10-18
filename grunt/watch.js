@@ -3,6 +3,10 @@ module.exports = {
     files: ['Gruntfile.js'],
     tasks: ['default']
   },
+  bower: {
+      files: ['bower.json'],
+      tasks: ['bower']
+  },
   javascript: {
     files: ['src/main/javascript/**/*.js'],
     tasks: ['javascriptquick']
