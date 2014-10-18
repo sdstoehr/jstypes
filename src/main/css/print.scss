@@ -5,7 +5,7 @@
   }
 
   header {
-    border-bottom: 0.1em solid #000;
+    border-bottom: 0.1em solid $textcolor;
   }
 
   .content a {
@@ -19,5 +19,36 @@
     }
   }
 
+  .comparison-table {
+
+    border-collapse: collapse;
+
+    td, th {
+      border: 1px solid black;
+    }
+
+    tbody td {
+      position: relative;
+    }
+
+    .result-true span {
+      text-indent: 0;
+      color: #FFF;
+      background: #FFF;
+
+      &:before {
+        background: #FFF;
+        color: $textcolor;
+        content: '\f14a';
+        font: 1.5em/1.5em FontAwesome;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+    }
+  }
 
 }

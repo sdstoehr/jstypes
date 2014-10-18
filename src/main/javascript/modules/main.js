@@ -1,6 +1,6 @@
-var main = (function (_window, undefined) {
+import Table from './table/table';
 
-    var _document = _window.document;
+var main = (function (_window, _document, undefined) {
 
     (function externalLinks() {
 
@@ -31,9 +31,25 @@ var main = (function (_window, undefined) {
     }());
 
 
+    (function renderTables() {
+
+        var tables = _document.querySelectorAll('.comparison-table'), i, table, comparator, caption;
+
+        for (i = 0; i < tables.length; i = i + 1) {
+            table = tables[i];
+            comparator = table.getAttribute('data-comparator');
+            caption = table.getAttribute('data-caption');
+
+            if (comparator !== Table.STRICTEQUAL && comparator !== Table.EQUAL) {
+                comparator = Table.STRICTEQUAL;
+            }
+
+            new Table(table, comparator, caption);
+        }
+    }());
 
   return {};
 
-}(window));
+}(window, window.document));
 
 export default main;

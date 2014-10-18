@@ -1,0 +1,54 @@
+.comparison-table {
+  width: 100%;
+  position: relative;
+  margin: 0 0 2em 0;
+
+  caption {
+    display: none;
+  }
+
+  td, th {
+    width: 2em;
+    height: 2em;
+  }
+
+  th {
+    font-family: monospace;
+  }
+
+  thead th {
+    height: 4em;
+    text-align: left;
+
+    span {
+      padding: 0.5em 0 0 0;
+      position: absolute;
+      transform: rotate(-90deg) translate(-1em, 100%);
+      transform-origin: 0 100% 0;
+    }
+  }
+
+
+  td {
+    text-align: center;
+    vertical-align: middle;
+
+    span {
+      display: inline-block;
+      text-indent: -10000em;
+      overflow: hidden;
+
+      width: 2em;
+      height: 2em;
+
+      margin: 0.1em;
+
+      background: #FFF;
+    }
+
+    &.result-true span {
+      background: $color1;
+    }
+  }
+
+}
