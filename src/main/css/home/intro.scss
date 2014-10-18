@@ -8,7 +8,7 @@
     margin: 0.25em;
   }
 
-  a {
+  .btn {
     text-decoration: none;
     display: inline-block;
 
@@ -24,6 +24,13 @@
 
     &:focus, &:active {
       background: $color3d;
+    }
+  }
+
+  &:hover {
+
+    .fa-lightbulb-o {
+      color: #FFF;
     }
   }
 }
