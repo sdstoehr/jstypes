@@ -4,6 +4,7 @@ header {
   color: #FFF;
 
   padding: 0.75em;
+  box-sizing: border-box;
   border-bottom: 0.75em solid $color3;
 
   text-align: center;
@@ -37,6 +38,7 @@ footer {
   color: #FFF;
 
   padding: 0.75em;
+  box-sizing: border-box;
   border-top: 0.75em solid $color2;
 
   text-align: center;
@@ -56,6 +58,7 @@ footer {
   color: $textcolor;
   background: $color6;
   padding: 0.75em;
+  box-sizing: border-box;
 }
 
 h2 {
