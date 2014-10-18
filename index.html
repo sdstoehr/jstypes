@@ -58,6 +58,10 @@
                 <strong>So the equals operator makes use of implicit coercion!</strong>
             </p>
 
+            <div class="comparison-table" data-comparator="==" data-caption="Equal operator: comparison table">
+                <h5>Comparison Table: Equal operator</h5>
+                <noscript>Please activate JavaScript to see the omparison table!</noscript>
+            </div>
 
             <h3 id="strictequals"><em>Strict</em> equals operator: <code>===</code></h3>
 
@@ -65,6 +69,22 @@
                 The strict equals operator uses the <a href="http://www.ecma-international.org/ecma-262/5.1/#sec-11.9.6" title="ECMAScript Specification: Strict Equality Comparison Algorithm" rel="external">
                 Strict Equality Comparison Algorithm</a>. If the types of the compared values differ, the result of the comparison is always false.
                 <strong>There is no implicit coercion taking place!</strong>
+            </p>
+
+            <div class="comparison-table" data-comparator="===" data-caption="Strict equal operator: comparison table">
+                <h5>Comparison Table: Srict equal operator</h5>
+                <noscript>Please activate JavaScript to see the omparison table!</noscript>
+            </div>
+
+            <h3>Which one should I use?</h3>
+
+            <p>
+                There is no right and wrong. Both <code>==</code> and <code>===</code> can be useful.<br />
+                Whenever possible I would use the strict equals operator (<code>===</code>),
+                because it's behaviour is much more reasonable for developers, who aren't used to JavaScript's coercion.
+
+                Tools like <a href="http://www.jslint.com/" rel="external" title="JSLint">JSLint</a> or <a href="http://www.jshint.com/" rel="external" title="JSHint">JSHint</a>
+                can be configured to check the use of equals/strict equals operators in your code base.
             </p>
 
         </div>
