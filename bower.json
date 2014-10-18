@@ -1,0 +1,26 @@
+{
+  "name": "jstypes",
+  "version": "1.0.0",
+  "homepage": "http://www.jstypes.wtf/",
+  "authors": [
+    "Sebastian Stöhr <sebastian@sebastianstoehr.de>"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1"
+  },
+  "devDependencies": {
+    "almond": "~0.3.0"
+  }
+}

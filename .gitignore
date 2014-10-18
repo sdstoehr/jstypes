@@ -1,2 +1,7 @@
 node_modules
 target
+bower_components
+lib
+*.iml
+.idea
+.sass-cache

@@ -1,0 +1,29 @@
+{
+  "browser": true,
+  "boss": true,
+  "curly": true,
+  "camelcase": true,
+  "eqeqeq": true,
+  "eqnull": true,
+  "expr": true,
+  "freeze": true,
+  "forin": true,
+  "immed": true,
+  "indent": 2,
+  "maxlen": 160,
+  "maxdepth": 3,
+  "noarg": true,
+  "onevar": true,
+  "quotmark": "single",
+  "smarttabs": true,
+  "plusplus": true,
+  "trailing": true,
+  "undef": true,
+  "unused": true,
+
+  "esnext": true,
+
+  "predef": [
+    "define", "XMLHttpRequest", "XDomainRequest"
+  ]
+}
