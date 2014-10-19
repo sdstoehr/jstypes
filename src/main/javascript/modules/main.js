@@ -61,18 +61,20 @@ var main = (function (_window, _document, undefined) {
 
     (function sharerLinks() {
 
-        var sharers = _document.querySelectorAll('.share-popup'), i, sharer;
+        var sharers = _document.querySelectorAll('.share-popup'), i, sharer, listener;
+
+        listener = function (e) {
+            if (!this || !this.href) {
+                return false;
+            }
+            e.preventDefault();
+            return window.open(this.href,
+                'jst-sharer', 'height=400,width=600,resizable=1');
+        };
 
         for (i = 0; i < sharers.length; i = i + 1) {
             sharer = sharers[i];
-            sharer.onclick = function (e) {
-                if (!this || !this.href) {
-                    return false;
-                }
-                e.preventDefault();
-                return window.open(this.href,
-                    'jst-sharer', 'height=400,width=600,resizable=1');
-            }
+            sharer.onclick = listener;
         }
     }());
 

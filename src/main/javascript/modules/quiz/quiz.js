@@ -82,7 +82,7 @@ var Quiz = (function (_window, _document, undefined) {
             var table, thead, tbody, tr, td, i, historyEntry, icon, score;
 
             table = _document.createElement('table');
-            table.className = 'history'
+            table.className = 'history';
 
             thead = _document.createElement('thead');
             table.appendChild(thead);
@@ -140,8 +140,6 @@ var Quiz = (function (_window, _document, undefined) {
 
             this.innerElement.appendChild(score);
             this.innerElement.appendChild(table);
-
-            console.log("finished", this);
         },
 
         'render': function () {
@@ -178,7 +176,7 @@ var Quiz = (function (_window, _document, undefined) {
             trueButton.onclick = (function(that) {
                 return function () {
                     that.answer(true);
-                }
+                };
             }(this));
             this.innerElement.appendChild(trueButton);
 
@@ -188,7 +186,7 @@ var Quiz = (function (_window, _document, undefined) {
             falseButton.onclick = (function(that) {
                 return function () {
                     that.answer(false);
-                }
+                };
             }(this));
             this.innerElement.appendChild(falseButton);
 
@@ -219,7 +217,7 @@ var Quiz = (function (_window, _document, undefined) {
             _window.setTimeout((function (that) {
                 return function () {
                     that.quizElement.className = 'quiz';
-                }
+                };
             }(this)), 1000);
 
             this.next();
