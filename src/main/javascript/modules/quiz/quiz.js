@@ -72,6 +72,11 @@ var Quiz = (function (_window, _document, undefined) {
         },
 
         'finished': function () {
+
+            if (_window.ga) {
+                _window.ga('send', 'event', 'quiz', 'finished', this.points);
+            }
+
             this.questionElement.innerHTML = '';
             this.questionElement.appendChild(_document.createTextNode('Results'));
 
