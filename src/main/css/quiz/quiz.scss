@@ -1,0 +1,120 @@
+.content-quiz {
+  background: $color4;
+  text-align: center;
+
+  .inner-container {
+    padding: 1.5em 0.75em;
+  }
+
+  h2 {
+    font-size: 2em;
+    margin: 0.25em;
+  }
+
+}
+
+.quiz {
+  max-width: 640px;
+  margin: 0 auto;
+
+  text-align: left;
+
+  border: 0.5em solid $color6;
+  transition: border 0.25s linear;
+
+  .header {
+    background: $color6;
+    transition: background 0.25s linear;
+    position: relative;
+
+    h3 {
+      margin: 0;
+    }
+
+    .count {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  .inner {
+    padding: 2em 0.5em;
+    text-align: center;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 0.25em 0.75em;
+    margin: 0.25em 1em;
+    background: $color2;
+    color: #FFF;
+    cursor: pointer;
+
+    &:hover {
+      background: $color2l;
+    }
+
+    &:focus, &:active {
+      background: $color2d;
+    }
+  }
+
+  &.quiz-wrong {
+    border: 0.5em solid $color5;
+    animation: shake 0.5s;
+
+    .header {
+      background: $color5;
+      color: #FFF;
+    }
+  }
+
+  &.quiz-correct {
+    border: 0.5em solid $color2;
+
+    .header {
+      background: $color2;
+      color: #FFF;
+    }
+  }
+
+  h2 i {
+    display: block;
+  }
+
+  table.history {
+    width: 100%;
+
+    thead td, thead th {
+      font-weight: bold;
+    }
+
+    .history-wrong td, .history-wrong th {
+      background: $color5;
+      color: #FFF;
+    }
+  }
+}
+
+.sharer {
+  margin: 0.75em 0 0.25em 0;
+  font-size: 1.5em;
+
+  a {
+    display: inline-block;
+    margin: 0 0.25em;
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translate3d(-10px, 0, 0);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translate3d(10px, 0, 0);
+  }
+}

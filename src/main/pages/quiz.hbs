@@ -3,15 +3,26 @@ title: Quiz
 base_url: ../
 ---
 
-<div class="content content-intro">
+<div class="content content-quiz">
     <div class="inner-container">
 
         <h2>
-            <i class="fa fa-wrench fa-2x"></i><br />
-            Coming soon!
+            Take the quiz and test your knowledge!
         </h2>
 
-        <a href="{{ base_url }}" title="JavaScript: Truth and equality" class="btn">Back to home</a>
+        <div class="render-quiz">
+
+        </div>
+
+        <div class="sharer">
+            <a href="https://www.facebook.com/dialog/share?app_id=299446530260111&display=popup&href={{ site.url }}quiz/&redirect_uri={{ site.url }}quiz/" class="share-popup"><i class="fa fa-facebook-square"><span>Facebook</span></i></a>
+            <a href="https://twitter.com/share?url={{ site.url }}quiz/" class="share-popup"><i class="fa fa-twitter-square"><span>Twitter</span></i></a>
+        </div>
+
 
     </div>
 </div>
+
+{{> cta-learn }}
+
+{{> cta-hire }}

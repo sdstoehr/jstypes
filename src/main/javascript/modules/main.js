@@ -1,4 +1,5 @@
 import Table from './table/table';
+import Quiz from './quiz/quiz';
 
 var main = (function (_window, _document, undefined) {
 
@@ -45,6 +46,33 @@ var main = (function (_window, _document, undefined) {
             }
 
             new Table(table, comparator, caption);
+        }
+    }());
+
+    (function renderQuizes() {
+
+        var quizes = _document.querySelectorAll('.render-quiz'), i, quiz;
+
+        for (i = 0; i < quizes.length; i = i + 1) {
+            quiz = quizes[i];
+            new Quiz(quiz, 10);
+        }
+    }());
+
+    (function sharerLinks() {
+
+        var sharers = _document.querySelectorAll('.share-popup'), i, sharer;
+
+        for (i = 0; i < sharers.length; i = i + 1) {
+            sharer = sharers[i];
+            sharer.onclick = function (e) {
+                if (!this || !this.href) {
+                    return false;
+                }
+                e.preventDefault();
+                return window.open(this.href,
+                    'jst-sharer', 'height=400,width=600,resizable=1');
+            }
         }
     }());
 

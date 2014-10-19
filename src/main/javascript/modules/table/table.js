@@ -1,4 +1,4 @@
-import Comparison from './comparision';
+import Comparison from '../comparision';
 
 var Table = (function (_window, _document, undefined) {
 
