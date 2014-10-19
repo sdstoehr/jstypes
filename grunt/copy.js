@@ -7,7 +7,7 @@ module.exports = {
 
             // copy font awesome
             {expand: true, cwd: 'lib/components-font-awesome/', src: ['**'], dest: 'target/_temp/css/'},
-            {expand: true, cwd: 'bower_components/components-font-awesome/fonts/', src: ['**'], dest: 'target/dist/fonts/'}
+            {expand: true, cwd: 'bower_components/components-font-awesome/fonts/', src: ['**'], dest: 'target/dist/assets/fonts/'}
 
         ]
     }

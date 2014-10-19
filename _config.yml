@@ -1,0 +1,6 @@
+root:             target/dist/
+dest:             <%= site.root %>
+assets:           <%= site.dest %>/assets
+
+title:            JStypes
+description:      The JavaScript type system is quite hard to understand. Take the quiz and test your knowledge!

@@ -1,0 +1,100 @@
+---
+title: Truth and equality in JavaScript
+base_url: ./
+---
+<div class="content content-intro noprint">
+    <div class="inner-container">
+
+        <h2>
+            <i class="fa fa-lightbulb-o fa-2x"></i><br />
+            The JavaScript type system is quite hard to understand.
+        </h2>
+        <a href="./quiz/" title="Take the quiz!" class="btn">Take the quiz and test your knowledge!</a>
+
+    </div>
+</div>
+
+<div class="content">
+    <div class="inner-container">
+
+        <h2>Truth and equality in JavaScript</h2>
+
+        <p>
+            When comparing values in JavaScript you have to know about <strong class="kw">implicit coercion</strong>.
+            Otherwise you may be surprised by unexpected results.<br />
+            JavaScript automatically converts a value's data type &ndash; this is called <strong class="kw">coercion</strong>.
+            When you know the rules, you can use this concept as a powerful feature. If you don't, this is a major pitfall.
+        </p>
+
+        <p>
+            JavaScript knows two different equality operators:
+        </p>
+
+        <ul>
+            <li>the equals operator: <code>==</code></li>
+            <li>the <em>strict</em> equals operator: <code>===</code></li>
+        </ul>
+
+        <p>They differ in how they treat values of different data types.</p>
+
+        <h3 id="equals">Equals operator: <code>==</code></h3>
+
+        <p>
+            The equals operator uses the <a href="http://www.ecma-international.org/ecma-262/5.1/#sec-11.9.3" title="ECMAScript Specification: Abstract Equality Comparison Algorithm" rel="external">
+            Abstract Equality Comparison Algorithm</a> to compare two values. The algorithm specifies, how values of different types are converted before comparing them.
+            <strong>So the equals operator makes use of implicit coercion!</strong>
+        </p>
+
+        <div class="comparison-table" data-comparator="==" data-caption="Equal operator: comparison table">
+            <h5>Comparison Table: Equal operator</h5>
+            <noscript>Please activate JavaScript to see the omparison table!</noscript>
+        </div>
+
+        <h3 id="strictequals"><em>Strict</em> equals operator: <code>===</code></h3>
+
+        <p>
+            The strict equals operator uses the <a href="http://www.ecma-international.org/ecma-262/5.1/#sec-11.9.6" title="ECMAScript Specification: Strict Equality Comparison Algorithm" rel="external">
+            Strict Equality Comparison Algorithm</a>. If the types of the compared values differ, the result of the comparison is always false.
+            <strong>There is no implicit coercion taking place!</strong>
+        </p>
+
+        <div class="comparison-table" data-comparator="===" data-caption="Strict equal operator: comparison table">
+            <h5>Comparison Table: Srict equal operator</h5>
+            <noscript>Please activate JavaScript to see the omparison table!</noscript>
+        </div>
+
+        <h3>Which one should I use?</h3>
+
+        <p>
+            There is no right and wrong. Both <code>==</code> and <code>===</code> can be useful.<br />
+            Whenever possible I would use the strict equals operator (<code>===</code>),
+            because it's behaviour is much more reasonable for developers, who aren't used to JavaScript's coercion.
+
+            Tools like <a href="http://www.jslint.com/" rel="external" title="JSLint">JSLint</a> or <a href="http://www.jshint.com/" rel="external" title="JSHint">JSHint</a>
+            can be configured to check the use of equals/strict equals operators in your code base.
+        </p>
+
+    </div>
+</div>
+
+<div class="content content-hire noprint">
+    <div class="inner-container">
+        <h2>
+            <i class="fa fa-briefcase fa-2x"></i><br />
+            Interested in developing 3rd party JavaScripts?
+        </h2>
+
+        <p>
+            We are looking for JavaScript developers in Karlsruhe, Germany.<br />
+            We develop 3rd party JavaScript components, which are then integrated into several websites.
+        </p>
+
+        <a href="http://www.united-internet.de/jobs-karriere/offene-stellen/stellenangebot/job/ka-sst140702.html" title="Job description (german)" rel="external" class="btn">Find out more!</a>
+
+        <p>
+            More interested in PHP?<br />
+            <a href="http://www.united-internet.de/jobs-karriere/offene-stellen/stellenangebot/job/ka-sst140701.html" title="Job description (german)" rel="external">We are looking for PHP developers, too!</a>
+        </p>
+
+    </div>
+</div>

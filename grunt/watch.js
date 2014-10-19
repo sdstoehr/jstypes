@@ -18,5 +18,9 @@ module.exports = {
   resources: {
     files: 'src/main/resources/**/*',
     tasks: ['copy']
+  },
+  templates: {
+    files: ['src/main/templates/**/*', 'src/main/pages/**/*'],
+    tasks: ['assemble']
   }
 };

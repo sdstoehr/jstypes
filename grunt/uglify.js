@@ -5,7 +5,7 @@ module.exports = {
   },
   navigation: {
     files: {
-      'target/dist/scripts/main.min.js': ['target/_temp/main.js']
+      'target/dist/assets/scripts/main.min.js': ['target/_temp/main.js']
     }
   }
 };
