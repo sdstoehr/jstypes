@@ -1,0 +1,28 @@
+.content-cheatsheet {
+  background: $color4;
+  text-align: center;
+
+  .inner-container {
+    padding: 1.5em 0.75em;
+  }
+
+
+  h2 {
+    font-size: 2em;
+    margin: 0.25em;
+  }
+
+  .btn {
+    background: $color3;
+    color: #FFF;
+
+    &:hover {
+      background: $color3l;
+    }
+
+    &:focus, &:active {
+      background: $color3d;
+    }
+  }
+
+}

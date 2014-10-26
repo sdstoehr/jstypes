@@ -1,5 +1,21 @@
 <title>{{ title }} &mdash; {{ site.title }}</title>
-<meta name="description" content="{{ site.description }}" />
+<meta name="description" content="{{#if description}}{{ description }}{{else}}{{ site.description }}{{/if}}" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="UTF-8" />
 <link rel="stylesheet" type="text/css" href="{{ assets }}/styles/main.min.css" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="{{ title }}" />
+
+<link rel="canonical" href="{{site.url}}{{#compare page.basename "!=" "index"}}{{page.basename}}/{{/compare}}" />
+<meta property="og:url" content="{{site.url}}{{#compare page.basename "!=" "index"}}{{page.basename}}/{{/compare}}" />
+
+<meta name="twitter:card" content="summary_large_image">
+{{#if site.twitterSite}}<meta name="twitter:site" content="@{{site.twitterSite}}">{{/if}}
+{{#if site.twitterCreator}}<meta name="twitter:creator" content="@{{site.twitterCreator}}">{{/if}}
+<meta name="twitter:title" content="{{ title }}">
+
+{{#if meta_image}}
+    <meta property="og:image" content="{{meta_image}}" />
+    <meta name="twitter:image:src" content="{{meta_image}}">
+{{/if}}

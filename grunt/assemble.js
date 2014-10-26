@@ -1,10 +1,13 @@
 module.exports = {
     options: {
-        plugins: ['assemble-contrib-permalinks'],
+        plugins: ['assemble-contrib-permalinks', 'assemble-middleware-sitemap'],
         assets: '<%= site.assets %>',
         data: '<%= site.data %>/*.{json,yml}',
         // Metadata
-        site: '<%= site %>'
+        site: '<%= site %>',
+        sitemap: {
+            relativedest: true
+        }
     },
     project: {
         options: {

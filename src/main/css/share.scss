@@ -1,0 +1,41 @@
+$twitter: #55ACEE;
+$facebook: #3B5998;
+
+.share {
+  margin: 0.5em 0;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0.5em 0 0 0;
+    padding: 0.5em;
+    font-size: 1.0em;
+  }
+
+  .twitter {
+    background: $twitter;
+    color: #FFF;
+
+    &:hover {
+      background: lighten($twitter, 5%);
+    }
+
+    &:focus, &:active {
+      background: darken($twitter, 15%);
+    }
+  }
+
+  .facebook {
+    background: $facebook;
+    color: #FFF;
+
+    &:hover {
+      background: lighten($facebook, 5%);
+    }
+
+    &:focus, &:active {
+      background: darken($facebook, 15%);
+    }
+  }
+}

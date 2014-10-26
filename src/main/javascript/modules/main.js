@@ -1,11 +1,12 @@
 import Table from './table/table';
 import Quiz from './quiz/quiz';
+import './social/twitter';
 
 var main = (function (_window, _document, undefined) {
 
     (function externalLinks() {
 
-        var links = _document.querySelectorAll('a[rel*="external"]'), i, link, track;
+        var links = _document.querySelectorAll('a[rel*="external"], a[rel*="download"]'), i, link, track;
 
         track = function (e) {
             var target = e.target, href, _ga = _window.ga;

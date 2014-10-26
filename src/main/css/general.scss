@@ -78,3 +78,30 @@ ul li {
 code {
   font-family: monospace;
 }
+
+a.btn {
+  text-decoration: none;
+  display: inline-block;
+
+  background: $color1;
+  color: #FFF;
+
+  padding: 0.5em;
+  font-size: 1.5em;
+
+  &:hover {
+    background: $color1l;
+  }
+
+  &:focus, &:active {
+    background: $color1d;
+  }
+
+  &.btn-small {
+    font-size: 1em;
+  }
+}
+
+.cta {
+  text-align: center;
+}

@@ -34,6 +34,10 @@ a, a:visited {
   color: $textcolor;
 }
 
+.nolink {
+  text-decoration: none;
+}
+
 .inner-container {
   min-width: 320px;
   max-width: 1024px;
@@ -44,9 +48,11 @@ a, a:visited {
 }
 
 @import 'general';
+@import 'share';
 @import 'home/intro';
 @import 'home/hire';
 @import 'home/learn';
+@import 'home/cheatsheet';
 @import 'table/comparison';
 @import 'quiz/quiz';
 
