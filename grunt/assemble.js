@@ -6,7 +6,8 @@ module.exports = {
         // Metadata
         site: '<%= site %>',
         sitemap: {
-            relativedest: true
+            relativedest: true,
+            dest: 'target/dist'
         }
     },
     project: {
