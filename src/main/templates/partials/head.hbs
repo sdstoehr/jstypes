@@ -14,6 +14,7 @@
 {{#if site.twitterSite}}<meta name="twitter:site" content="@{{site.twitterSite}}">{{/if}}
 {{#if site.twitterCreator}}<meta name="twitter:creator" content="@{{site.twitterCreator}}">{{/if}}
 <meta name="twitter:title" content="{{ title }}">
+<meta name="twitter:description" content="{{#if description}}{{ description }}{{else}}{{ site.description }}{{/if}}" />
 
 {{#if meta_image}}
     <meta property="og:image" content="{{site.url}}{{meta_image}}" />
