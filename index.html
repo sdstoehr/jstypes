@@ -6,6 +6,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="UTF-8" />
 <link rel="stylesheet" type="text/css" href="assets/styles/main.min.css" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Truth and equality in JavaScript" />
+
+<link rel="canonical" href="http://www.jstypes.wtf/" />
+<meta property="og:url" content="http://www.jstypes.wtf/" />
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@jstypes">
+<meta name="twitter:creator" content="@sdstoehr">
+<meta name="twitter:title" content="Truth and equality in JavaScript">
+
+
+    <meta property="og:image" content="./downloads/table-equals.jpg" />
+    <meta name="twitter:image:src" content="./downloads/table-equals.jpg">
+
+
 </head>
 <body>
 
@@ -46,13 +63,13 @@
         </p>
 
         <ul>
-            <li>the equals operator: <code>==</code></li>
-            <li>the <em>strict</em> equals operator: <code>===</code></li>
+            <li><a href="./equals-operator/" title="Equals operator - Comparison Table" class="nolink">the equals operator: <code>==</code></a></li>
+            <li><a href="./strict-equals-operator/" title="Strict equals operator - Comparison Table" class="nolink">the <em>strict</em> equals operator: <code>===</code></a></li>
         </ul>
 
         <p>They differ in how they treat values of different data types.</p>
 
-        <h3 id="equals">Equals operator: <code>==</code></h3>
+        <h3 id="equals"><a href="./equals-operator/" title="Equals operator - Comparison Table" class="nolink">Equals operator: <code>==</code></a></h3>
 
         <p>
             The equals operator uses the <a href="http://www.ecma-international.org/ecma-262/5.1/#sec-11.9.3" title="ECMAScript Specification: Abstract Equality Comparison Algorithm" rel="external">
@@ -60,12 +77,11 @@
             <strong>So the equals operator makes use of implicit coercion!</strong>
         </p>
 
-        <div class="comparison-table" data-comparator="==" data-caption="Equal operator: comparison table">
-            <h5>Comparison Table: Equal operator</h5>
-            <noscript>Please activate JavaScript to see the omparison table!</noscript>
+        <div class="cta">
+            <a href="./equals-operator/" title="Equals operator - Comparison Table" class="btn btn-small">View <code>==</code> comparison table</a>
         </div>
 
-        <h3 id="strictequals"><em>Strict</em> equals operator: <code>===</code></h3>
+        <h3 id="strictequals"><a href="./strict-equals-operator/" title="Strict equals operator - Comparison Table" class="nolink"><em>Strict</em> equals operator: <code>===</code></a></h3>
 
         <p>
             The strict equals operator uses the <a href="http://www.ecma-international.org/ecma-262/5.1/#sec-11.9.6" title="ECMAScript Specification: Strict Equality Comparison Algorithm" rel="external">
@@ -73,9 +89,8 @@
             <strong>There is no implicit coercion taking place!</strong>
         </p>
 
-        <div class="comparison-table" data-comparator="===" data-caption="Strict equal operator: comparison table">
-            <h5>Comparison Table: Srict equal operator</h5>
-            <noscript>Please activate JavaScript to see the omparison table!</noscript>
+        <div class="cta">
+            <a href="./strict-equals-operator/" title="Strict equals operator - Comparison Table" class="btn btn-small">View <code>===</code> comparison table</a>
         </div>
 
         <h3>Which one should I use?</h3>

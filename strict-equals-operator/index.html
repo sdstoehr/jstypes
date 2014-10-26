@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JavaScript Equals Operator - Quiz &mdash; JStypes</title>
-<meta name="description" content="The JavaScript type system is quite hard to understand. Take the quiz and test your knowledge!" />
+    <title>Strict equals operator in JavaScript &mdash; JStypes</title>
+<meta name="description" content="If the types of the compared values differ, the result of the strict comparison is always false." />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="UTF-8" />
 <link rel="stylesheet" type="text/css" href="../assets/styles/main.min.css" />
 
 <meta property="og:type" content="website" />
-<meta property="og:title" content="JavaScript Equals Operator - Quiz" />
+<meta property="og:title" content="Strict equals operator in JavaScript" />
 
-<link rel="canonical" href="http://www.jstypes.wtf/quiz/" />
-<meta property="og:url" content="http://www.jstypes.wtf/quiz/" />
+<link rel="canonical" href="http://www.jstypes.wtf/strict-equals-operator/" />
+<meta property="og:url" content="http://www.jstypes.wtf/strict-equals-operator/" />
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@jstypes">
 <meta name="twitter:creator" content="@sdstoehr">
-<meta name="twitter:title" content="JavaScript Equals Operator - Quiz">
+<meta name="twitter:title" content="Strict equals operator in JavaScript">
 
+
+    <meta property="og:image" content="../downloads/table-strictequals.jpg" />
+    <meta name="twitter:image:src" content="../downloads/table-strictequals.jpg">
 
 
 </head>
@@ -31,44 +34,42 @@
 
 
 
-<div class="content content-quiz">
-    <div class="inner-container">
-
-        <h2>
-            Take the quiz and test your knowledge!
-        </h2>
-
-        <div class="render-quiz">
-
-        </div>
-
-
-    </div>
-</div>
 
 <div class="content">
     <div class="inner-container">
-        <div class="share">
-            <a href="https://www.facebook.com/dialog/share?app_id=299446530260111&display=popup&href=http://www.jstypes.wtf/quiz/&redirect_uri=http://www.jstypes.wtf/quiz/" class="share-popup facebook"><i class="fa fa-facebook-square"></i> Facebook</a>
-            <a href="https://twitter.com/intent/tweet?url=http://www.jstypes.wtf/quiz/&text=Take%20the%20quiz%20and%20test%20your%20knowledge!&via=jstypes&hashtags=javascript" class="twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
+
+        <h2>Strict equals operator: <code>===</code></h2>
+
+        <p>
+            The strict equals operator uses the <a href="http://www.ecma-international.org/ecma-262/5.1/#sec-11.9.6" title="ECMAScript Specification: Strict Equality Comparison Algorithm" rel="external">
+            Strict Equality Comparison Algorithm</a>. If the types of the compared values differ, the result of the comparison is always false.
+        </p>
+
+        <div class="comparison-table" data-comparator="===" data-caption="Strict equal operator: comparison table">
+            <h5>Comparison Table: Strict equal operator</h5>
+            <noscript>Please activate JavaScript to see the omparison table!</noscript>
         </div>
+
+        <div class="share">
+            <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.jstypes.wtf%2Fstrict-equals-operator/&via=jstypes&hashtags=javascript" class="twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
+        </div>
+
     </div>
 </div>
 
-<div class="content content-learn">
+<div class="content content-cheatsheet">
     <div class="inner-container">
 
         <h2>
-            <i class="fa fa-graduation-cap fa-2x"></i><br />
-            The JavaScript type system is quite hard to understand.
+            <i class="fa fa-cloud-download fa-2x"></i><br />
+            Download the cheatsheet
         </h2>
 
         <p>
-            Do you know the difference between equals operator <code>==</code> and <em>strict</em> equals operator <code>===</code>?<br />
-            Do you know "truthy" and "falsy" values?
+            Download the comparison overview as printable PDF
         </p>
 
-        <a href="../" title="Learn more!" class="btn">Learn more!</a>
+        <a href="../downloads/cheatsheet-equality.pdf" title="Download" class="btn" rel="download">Download</a>
 
 
     </div>
@@ -95,6 +96,7 @@
 
     </div>
 </div>
+
 
 
 <footer>
