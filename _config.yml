@@ -5,7 +5,7 @@ assets:           <%= site.dest %>/assets
 title:            JStypes
 description:      The JavaScript type system is quite hard to understand. Take the quiz and test your knowledge!
 
-url:              http://www.jstypes.wtf/
+url:              http://sdstoehr.github.io/jstypes/
 
-twitterSite:      "jstypes"
+twitterSite:      "sdstoehr"
 twitterCreator:   "sdstoehr"
