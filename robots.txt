@@ -1,4 +1,4 @@
 User-agent: *
 
 
-Sitemap: http://www.jstypes.wtf/sitemap.xml
+Sitemap: http://sdstoehr.github.io/jstypes/sitemap.xml
